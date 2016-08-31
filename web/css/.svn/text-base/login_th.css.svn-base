@@ -1,0 +1,463 @@
+/* body {
+	background-color: #ccc;
+ 	background-size:1360px 1500px; 
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+.main-content {
+	background-color: rgba(255,255,255,.9);
+	width:400px;
+	margin-left:-200px;
+	height:380px;
+	margin-top:-200px;
+	position: fixed;
+	top:50%;
+	left:50%;
+	border-radius:4px;
+	padding:30px 0 30px 0;
+}
+.whole-content {
+	background: url(../img/beauty-bg.png) fixed center;
+	display: block;
+	overflow: hidden;
+	width:400px;
+	height:380px;
+	margin:0 auto;
+	position: relative;
+	height: 100%;
+	width:100%;
+}
+企业注册
+.company-register {
+	display:inline-block;
+  	position:absolute;
+  	left:8px;
+  	top:14px;
+    cursor: pointer;
+    color:#999!important;
+    z-index:9999;
+    text-align:center;
+}
+.company-register a{
+	color:#ffba01!important;
+}
+.close {
+	display:inline-block;
+  	position:absolute;
+  	right:8px;
+  	top:6px;
+    cursor: pointer;
+    color:#999!important;
+    z-index:9999;
+    text-align:center;
+}
+.close i {
+	display:inline-block;
+	width: 30px;
+    line-height: 26px;
+    font-size:40px;
+    font-weight:normal;
+}
+.close i:hover {
+	color:#ffba01!important;
+}
+.logorow {
+	text-align: center;
+	margin-bottom: 6px;
+}
+.logorow img {
+	width:50px;
+	height:30px;
+}
+.logorow .name {
+	vertical-align: top;
+	line-height: 50px;
+	display: inline-block;
+	font-size:20px;
+	font-weight:700;
+}
+.holder .logorow {
+	margin:0 30px;
+	border-bottom:1px solid #ffba01;
+}
+.holder {
+	width:240px;
+	margin:0 auto;
+	position: relative;
+	margin-top:20px;
+}
+.with-line {
+	font-size: 16px;
+    color: #999;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.with-line:before {
+	content: "";
+    border-top: 1px solid #ffba01;
+    display: block;
+    position: absolute;
+    width: 54px;
+    top: 10px;
+    left: 0;
+}
+.with-line:after {
+	content: "";
+    border-top: 1px solid #ffba01;
+    display: block;
+    position: absolute;
+    width: 54px;
+    top: 10px;
+    right: 0;
+}
+.role {
+	border:1px solid #ffe08c;
+	margin-top:14px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.role span {
+	display:inline-block;
+	color:#ffba01;
+	background-color: #fff;
+	font-size:16px;
+	width:50%;
+	text-align: center;
+	float:left;
+	padding:4px;
+	box-sizing:border-box;
+}
+.role .role-active {
+	background-color:#ffba01; 
+	color: #fff;
+}
+.role > span:hover {
+	cursor: pointer;
+}
+.code-wrap {
+	display:inline-block;
+}
+.register-btn {
+	background-color: #ffba01;
+	color:#fff;
+}
+.sure-register,
+.register-btn,
+.verlification,
+.login .company-log > input,
+.login > input,
+.login .person-log > input {
+	padding:4px 8px;
+	outline:none;
+	display:inline-block;
+	margin-top:18px;
+	box-shadow:none;
+	width:100%;
+	border:1px solid #ffe08c;
+	font-size:14px;
+}
+#sure-register {
+	width:100%!important;
+	background-color: #ffba01;
+	color:#fff;
+}
+取消浏览器自动填充账号密码之后，input背景的黄色
+#username:-webkit-autofill{
+	-webkit-box-shadow:0 0 0 1000px white inset;
+}
+.login .company-log {
+	display:none;
+}
+.get-code,
+.verlification {
+	width:50%!important;
+	box-sizing:border-box;
+	float:left;
+	height:30px;
+	margin-top:18px;
+}
+.login-tip {
+	padding:4px 20px;
+	width:100%;
+	margin-top:10px;
+}
+.login-tip > span {
+	margin-right:20px;
+}
+.get-code {
+	display: inline-block;
+	background-color:#ffba01;
+	color:#fff;
+	font-size:15px;
+	padding:6px 4px;
+	text-align:center;
+	margin-top:18px;
+	box-sizing:border-box;
+}
+.back,
+.change-pas,
+.reset-pas{
+	display: inline-block;
+	background-color:#ffba01;
+	width:110px;
+	color:#fff;
+	font-size:15px;
+	padding:6px 4px;
+	text-align:center;
+	margin-right:16px;
+}
+.back {
+	margin-right:16px;
+}
+.go-login,
+.login-btn {
+	display: inline-block;
+	background-color:#ffba01;
+	width:100%;
+	color:#fff;
+	font-size:15px;
+	padding:6px 4px;
+	text-align:center;
+	margin-top:10px;
+	box-shadow:none;
+	border:none;
+}
+.go-login {
+	margin-top:24px;
+}
+.forget-pas {
+	color:#ffba01!important;
+	font-size:12px;
+	margin-top:8px;
+	color:#999;
+}
+.forget-pas:hover {
+	color:#ffba01;
+	cursor: pointer;
+}
+.margin-top {
+	margin-top:30px;
+}
+ .holder .logorow {
+	margin-bottom: 6px;
+}
+.register-step3,
+.reset-step3 {
+	text-align: center;
+}
+.register-step2,
+.register-step3,
+.reset-step3,
+.reset-step2 {
+	display: none;
+}
+.register-step2 input,
+.reset-step2 input {
+	width:68%!important;
+}
+.register-step2 > span,
+.reset-step2 > span {
+	display:inline-block;
+	line-height: 30px;
+}
+.xiugai-tip {
+	display:inline-block;
+	margin-top:18px;
+}
+.double-btn {
+	text-align: center;
+	margin-top:24px;
+}
+.distance-logo {
+	margin-top:14px;
+} */
+
+
+
+#exitCon,
+#loginCon {
+	width:100%;
+	height:100%;
+	z-index:9999;
+	position: absolute;
+	display: block;
+	top: 50px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.con-head {
+	padding:8px 20px;
+	height:46px;
+	color:#666;
+	line-height:30px;
+	width:100%;
+}
+.con-close {
+	cursor: pointer;
+    float: right;
+    display: inline-block;
+    width:38px;
+    height:38px;
+    border-radius:50em;
+    font-size: 36px;
+    line-height:38px;
+    font-style: normal;
+    font-weight:normal!important;
+    color:#fff;
+    background-color: #000;
+    text-align: center;
+}
+.con-close:hover {
+	color:#ffba01;
+}
+.con-body {
+	width:400px;
+	margin:10px auto;
+	border-radius:2px;
+	/* padding-bottom: 20px; */
+	background-color: #fff;
+	position: relative;
+}
+#loginCon .con-body {
+	height:380px;
+}
+#loginCon .whole-content {
+	display: block;
+	overflow: hidden;
+	width:400px;
+	height:380px;
+	margin:0 auto;
+	position: relative;
+}
+#loginCon .main-content {
+	background-color: #fff;
+	width:400px;
+	margin-left:-200px;
+	height:380px;
+	margin-top:0!important;
+	position: absolute;
+	left:50%;
+	border-radius:4px;
+	padding:30px 0 30px 0;
+}
+#loginCon .close {
+	display:inline-block;
+  	position:absolute;
+  	right:8px;
+  	top:6px;
+    cursor: pointer;
+    color:#333!important;
+    z-index:9999;
+    text-align:center;
+    font-size:36px;
+    font-weight:normal!important;
+}
+.logorow {
+	text-align: center;
+	margin-bottom: 6px;
+}
+.logorow img {
+	/* width:50px; */
+	height:30px;
+}
+.holder {
+	width:240px;
+	margin:0 auto;
+	position: relative;
+}
+#loginCon .with-line {
+	display:block;
+	font-size: 16px;
+    color: #999;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+#loginCon .with-line:before {
+	content: "";
+    border-top: 1px solid #ffba01;
+    display: block;
+    position: absolute;
+    width: 54px;
+    top: 10px;
+    left: 0;
+}
+#loginCon .with-line:after {
+	content: "";
+    border-top: 1px solid #ffba01;
+    display: block;
+    position: absolute;
+    width: 54px;
+    top: 10px;
+    right: 0;
+}
+.role {
+	border:1px solid #ffe08c;
+	margin-top:14px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.role span {
+	display:inline-block;
+	color:#ffba01;
+	background-color: #fff;
+	font-size:16px;
+	width:50%;
+	text-align: center;
+	float:left;
+	padding:4px;
+	box-sizing:border-box;
+}
+.role .role-active {
+	background-color:#ffba01; 
+	color: #fff;
+}
+.role > span:hover {
+	cursor: pointer;
+}
+.sure-register,
+.register-btn,
+.verlification,
+.login .company-log > input,
+.login > input,
+.login .person-log > input {
+	padding:4px 8px;
+	outline:none;
+	display:inline-block;
+	margin-top:18px;
+	box-shadow:none;
+	width:100%;
+	border:1px solid #ffe08c;
+	font-size:14px;
+}
+.login-tip {
+	padding:4px 20px;
+	width:100%;
+	margin-top:10px;
+}
+.go-login,
+.login-btn {
+	display: inline-block;
+	background-color:#ffba01;
+	width:100%;
+	color:#fff;
+	font-size:15px;
+	padding:6px 4px;
+	text-align:center;
+	margin-top:10px;
+	box-shadow:none;
+	border:none;
+}
+.forget-pas {
+	/* color:#ffba01!important; */
+	font-size:12px;
+	margin-top:8px;
+	color:#999;
+}
+.forget-pas:hover {
+	color:#ffba01;
+	cursor: pointer;
+}

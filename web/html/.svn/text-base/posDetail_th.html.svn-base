@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" /> 
+		<!-- <meta http-equiv="content-Type" content="text/html; charset=UTF-8" />  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>职位详细信息~</title>
+		<!-- Bootstap css -->
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/animate.min.css" />
+		<!-- Public css -->
+		<link rel="icon" href="../img/microcv.ico" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/microcvLayout_th.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/login_th.css" />
+		<!-- My css -->
+		<link rel="stylesheet" type="text/css" href="../../web/css/posDetail_th.css" />
+	</head>
+	<body>
+		<div id="load_nav"></div>
+		<div class="whole-c">
+			<div class="main-c">
+				<div class="pos-head">
+					<img class="com-logo" id="com_logo" src="../img/skill.png" onerror="logoerror('com_logo');"/>
+						<span class="r-head">
+							<span id="pos_name" class="pos-name">UI设计师</span>
+							<span id="com_name" class="p-name">广州市玄武无线科技股份有限公司</span>
+							<span class="collect"><i class="fa fa-heart"></i>收藏</span>
+						</span>
+				</div><!-- /.pos-head -->
+				<div class="pos-detail">
+					<div class="row1">
+						<p class="t-salary">
+							<img src="../img/money.png" alt="salary"/>
+							<span id="pos_salary">1-1.2w</span>
+						</p>
+						<p>
+							<span class="time">
+								<img src="../img/time.png" alt="time"/>
+								<span id="pos_time">2016-8-9</span>
+							</span>
+							<span class="address">
+								<img src="../img/address.png" alt="address"/>
+								<span id="com_address">广州</span>
+							</span>
+						</p>
+						<button type="button" class="sendto" id="deli_bt"><i class="fa fa-paper-plane-o"></i>我要投递</button>
+					</div><!-- /.row1 -->
+					<div class="row2">
+						<p class="sub-title">
+							<span class="rec"></span>
+							<span>职位要求</span>
+						</p>
+						<p class="required">
+							<span id="pos_record">本科</span>
+							|<span id="pos_major">视觉传达</span>
+							|<span id="working_seniority">2年以上经验</span>
+							|<span id="pos_age">23-35岁</span>
+							|<span id="pos_lang">英语六级</span>
+						</p>
+					</div><!-- /.row2 -->
+					<div class="row3">
+						<p class="sub-title">
+							<span class="rec"></span>
+							<span>职位描述</span>
+						</p>
+						<div id="div-detail" class="zw-content">
+							<!--<p id="pos_detail">一、主导并负责相应产品的视觉设计及交互设计，包括：</p>
+								<p>1.实现产品的UI设计，包括产品及门户等应用或系统的交互设计与视觉设计</p>
+								<p>2.实现产品的logo、吉祥物、宣传物料等的设计</p>
+								<p>3.分析用户使用和操作行为，优化产品业务流程设计和UI设计，改善用户体验，提升产品易用性</p>
+								<p>4.结合产品的项目实施过程，实现客户个性化需求的设计要求</p>
+								<p>5.学习、研究、报告IT产品主流UI设计思想和风格，供应各产品UI素材需要</p>
+								<p>二、完善UI设计规范，提升UI设计技能，建立和维护UI设计素材库。 -->
+							<!-- <p class="rz-required">任职要求：</p>
+								<p>1、本科以上学历，正规院校艺术类或广告设计专业毕业；</p>
+								<p>2、2年UI设计工作经验，熟悉Illustrator、Photoshop、Sketch、Fireworks、After Effects等设计软件，有IT行业工作经验优先；</p>
+								<p>3、思路清晰，能独立完成设计任务，并且具有较强的沟通协调能力；</p>
+								<p>4、具有优秀的创意思维、较强的审美观和创意展现能力，有扎实深厚的美术功底和时尚感知力；能够准确把握网站的整体风格及视觉表现，实时把握Web设计的流行趋势，提出崭新的创意策略；</p>
+								<p>5、工作积极主动，具有良好的沟通、表达能力、团队合作精神，能够很好的理解设计需求</p>
+								<p>6、应聘时请提供前期工作作品。</p> -->
+						</div>
+					</div><!--/.row3  -->
+					<div class="row4">
+						<p class="sub-title">
+							<span class="rec"></span>
+							<span>联系方式</span>
+						</p>
+						<p>
+							<span class="link">
+								<img src="../img/phone.png" alt="phone"/>
+								<span id="pos_link">李小姐：188111111</span>
+							</span>
+						</p>
+						<p>
+							<span class="email">
+								<img src="../img/email.png" alt="email"/>
+								<span>HR Email:</span>
+								<span id="hr_email">188111111</span>
+							</span>
+						</p>
+						<p>
+							<span class="address">
+								<img src="../img/address.png" alt="email"/>
+								<span>Address:</span>
+								<span id="pos_address">广州市天河区体育西路103号维多利广场B塔</span>
+							</span>
+						</p>
+						
+					</div><!--/.row4  -->
+					<div class="row5">
+						<p class="sub-title">
+							<span class="rec"></span>
+							<span>公司介绍</span>
+						</p>
+						<div class="introduce-content">	
+							<p class="com-name">
+								广州市玄武无线科技股份有限公司
+							</p>
+							<p id="com_detail" class="i-con">
+							广州市玄武无线科技股份有限公司（证券代码834968）是中国领先的企业移动信息化服务提供商，
+							公司创立于2000年，注册资金5000万元，现有员工500余人，以广州总部为核心，设立有北京、
+							上海、长沙、成都、厦门、深圳、南京、昆明、南宁、武汉、青岛、杭州等分公司，下设26家核心代理商
+							，业务范围覆盖34个省市，建立有全国性营销服务网络。目前，公司已于2015年12月正式挂牌上市，成
+							为中国企业移动应用服务领域的重磅生力军。公司创立于2000年，注册资金5000万元，现有员工500余人，以广州总部为核心，设立有北京、
+							上海、长沙、成都、厦门、深圳、南京、昆明、南宁、武汉、青岛、杭州等分公司业务范围覆盖34个省市，建立有全国性营销服务网络。目前，公司已于2015年12月正式挂牌上市，成
+							为中国企业移动应用服务领域的重磅生力军。公司创立于2000年，注册资金5000万元，现有员工500余人，以广州总部为核心，设立有北京、
+							上海、长沙、成都、厦门、深圳、南京、昆明、南宁、武汉、青岛、杭州等分公司
+							</p>
+							<span class="n-more">【展开】</span>
+						</div>
+						</div><!-- /.row5 -->
+				</div>
+				<div class="pos-bottom">
+					<p class="main-color">推荐职位</p>
+					<table class="tj-table">
+						<tr id="rem_tr1">
+							<td>
+								<img src="../img/skill.png" alt="推荐公司" id="rem_com1" onerror="logoerror('rem_com');"/>
+							</td>
+							<td>
+								<p class="position" id="pos_name1">UI设计师</p>
+								<p>
+									<span class="xueli" id="record1">本科</span> |
+									<span class="age" id="age1">24岁</span> |
+									<span class="jyan" id="exp1">经验</span> 
+								</p>
+							</td>
+							<td>
+								<p class="sal" id="salary1">5000-7000</p>
+								<p id="place1">广州 </p>
+							</td>
+							</td>
+						</tr>
+						<tr id="rem_tr2">
+							<td>
+								<img src="../img/skill.png" alt="推荐公司" id="rem_com2" onerror="logoerror('rem_com');"/>
+							</td>
+							<td>
+								<p class="position" id="pos_name2">UI设计师</p>
+								<p>
+									<span class="xueli" id="record2">本科</span> |
+									<span class="age" id="age2">24岁</span> |
+									<span class="jyan" id="exp2">经验</span> 
+								</p>
+							</td>
+							<td>
+								<p class="sal" id="salary2">5000-7000</p>
+								<p id="place2">广州 </p>
+							</td>
+							</td>
+						</tr>
+					</table>
+				</div><!-- /.pos-bottom -->
+			</div>
+		</div><!-- /.whole-c -->
+		<!-- Bootstap js -->
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/jquery-1.10.2.min.js"></script>
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/bootstrap.min.js"></script>
+		<script  type="text/javascript" src="../../web/js/microcvLayout_th.js"></script>
+		<!-- My js -->
+		<script  type="text/javascript" src="../../web/js/login_th.js"></script>
+		<script  type="text/javascript" src="../../web/js/posDetail_th.js"></script>
+		<script  type="text/javascript">
+		</script>
+	</body>
+</html>

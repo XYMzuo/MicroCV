@@ -1,0 +1,172 @@
+body {
+	font-family: "微软雅黑";
+	color:#666;
+	min-height: 100%;
+	background-color: #f2f2f2;
+}
+.content-wrap {
+    display: block;
+    width: 100%;
+  /*  	height:100%!important; */
+}
+.main-content {
+	margin:48px 0 20px;
+	padding-top: 20px;
+}
+.t-div {
+	margin:20px auto 30px;
+	width:800px;
+}
+.detail-con {
+	margin:20px auto 30px;
+	width:800px;
+	display: none;
+	position: relative;
+	padding-bottom: 40px;
+}
+.time-xz {
+	margin-bottom: 10px;
+}
+.time-xz .dropdown {
+	display: inline-block;
+	vertical-align: top;
+}
+.dropdown > button {
+	height:28px;
+	background-color: #fff;
+	padding:4px 14px;
+	width:100px;
+}
+.time-xz > span:first-child {
+	display: inline-block;
+	line-height: 28px;
+}
+.dropdown-menu {
+	min-width:100px!important;
+	height: 130px;
+	overflow: auto;
+}
+.dropdown .caret {
+	float:right;
+	margin-top: 8px;
+}
+
+.table-css {
+	width:100%;
+}
+.table-css thead {
+	background-color: #edebeb;
+}
+.table-css thead td,
+.table-css tbody td {
+	text-align: center;
+	border-bottom: 1px solid #dcdcdc;
+	padding:7px 10px;
+}
+.table-css tbody {
+	background-color: #fff;
+}
+.view {
+	color:#666;
+}
+.delete {
+	color:#666;
+}
+.cz-btn {
+	font-size:13px;
+	padding:1px 8px;
+	outline: none;
+	background: none!important;
+	border:1px solid transparent;
+}
+.cz-btn:hover {
+	cursor: pointer;
+}
+.view:hover {
+	border:1px solid #ffba01;
+}
+.delete:hover {
+	border:1px solid #f32323;
+}
+.bottom-div ,
+.top-div {
+	margin-bottom: 16px;
+} 
+.bottom-div > span,
+.top-div > span {
+	display: inline-block;
+	background-color: #ffba01;
+	color:#fff;
+	width:80px;
+	padding:4px 6px;
+	text-align: center;
+	margin-bottom: 10px;
+	border-radius:1px;
+}
+.cur-trow .shouqi-tr td,
+.cur-trow .zhankai-tr td{
+	color:#ffba01;
+	font-size:12px;
+}
+.cur-trow .shouqi-tr td:hover,
+.cur-trow .zhankai-tr td:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.cur-trow .shouqi-tr td i,
+.cur-trow .zhankai-tr td i {
+	margin-left: 4px;
+}
+.ysjl-table tr td img {
+	width:40px;
+	height:40px;
+}
+.ysjl-table .detail {
+	padding:1px 8px;
+	outline: none;
+	background: none!important;
+	border:1px solid transparent;
+	font-size:14px!important;
+	color:#ffba01;
+}
+.ysjl-table .detail:hover {
+	color:red;
+	cursor: pointer;
+}
+.more-con{
+	text-align: left!important;
+}
+.shouqi-tr,
+.con-tr {
+	display: none;
+}
+.row3,
+.row2 {
+	padding-left:60px;
+	padding-top:6px;
+}
+.rec {
+	display:inline-block;
+	width:4px;
+	height:16px;
+	background-color: #ffba01;
+}
+.required > span {
+	color:#666;
+	margin:0 16px;
+}
+.cur-trow {
+	margin-bottom: 36px;
+}
+.back {
+	position: absolute;
+	bottom:0;
+	left:0;
+	display: inline-block;
+	background-color: #ffba01;
+	color:#fff;
+	width:100px;
+	padding:4px 6px;
+	text-align: center;
+	border-radius:1px;
+}

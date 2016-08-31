@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" /> 
+		<!-- <meta http-equiv="content-Type" content="text/html; charset=UTF-8" />  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>企业中心~</title>
+		<!-- Bootstap css -->
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/datepicker.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/timepicker.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/animate.min.css" />
+		<!-- Public css -->
+		<link rel="icon" href="../img/microcv.ico" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/microcvLayout_th.css" />
+		<!-- My css -->
+		<link rel="stylesheet" type="text/css" href="../../web/css/companyCenter_th.css" />
+	</head>
+	<body>
+		<div id="load_nav"></div>
+			<div class="whole-c">
+				<div class="company-section ">
+					<div class="company-left">
+						<span class="base-info">
+							<img src="../img/uimg.png" alt="company img" class="current-img" id="current-img" onerror="imgerror('current-img');"/>
+							<p id="right_name">xxx</p>
+							<i class="fa fa-search-plus"></i>
+						</span>
+	                    <ul class="gr-item">
+							<li>
+								<img src="../img/message.png" />
+								<span class="item-active">
+									公司信息
+									<p class="english">Company Information</p>
+								</span>
+							</li>
+							<li>
+								<img src="../img/evaluation.png" />
+								<span>
+									已收评价
+									<p class="english">Company Evaluation</p>
+								</span>
+						</ul>
+	                </div>
+				
+					<div class="company-right">
+						<div class="xx-content">
+								<!-- <button type="button" class="cz-btn edit">编辑</button>  -->
+								<div>
+									<ul class="e-list">
+										<li class="modify"><i class="fa fa-pencil"></i></li>
+										<li class="cancel"><i class="fa fa-times"></i></li>
+										<li class="save"><i class="fa fa-check"></i></li>
+									</ul>
+								</div>
+								<div class="touxiang">
+									商	标：
+									<img src="../img/uimg.png" class="cur-img" id="img" alt="company img" onerror="imgerror('img');"/>
+									<!-- <p>单击修改图片</p> -->
+									<input name="file" type="file" id="com-img"  accept="img/*" />
+								</div> 
+								<div>
+									<label for="">公司名称：</label>
+									<input type="text" readonly class="company-name" id="com_name" value="" />
+								</div>
+								
+								<div class="type-choose">
+									<label for="">行业类型：</label>
+									<span class="dropdown industry-d">
+									<button class="btn dropdown-toggle" type="button" id="type-btn" data-toggle="dropdown" disabled="disabled">
+										<span class="chosen-item">请选择</span> 
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#" data-industry_id="1">互联网·游戏·软件</a></li>
+										<li><a href="#" data-industry_id="2">电子·通信·硬件</a></li>
+										<li><a href="#" data-industry_id="3">房地产·建筑·物业</a></li>
+										<li><a href="#" data-industry_id="4">金融</a></li>
+										<li><a href="#" data-industry_id="5">消费品</a></li>
+										<li><a href="#" data-industry_id="6">汽车·机械·制造</a></li>
+										<li><a href="#" data-industry_id="7">服务·外包·中介</a></li>
+										<li><a href="#" data-industry_id="8">广告·传媒</a></li>
+										<li><a href="#" data-industry_id="9">交通·贸易·物流</a></li>
+										<li><a href="#" data-industry_id="10">制药·医疗</a></li>
+										<li><a href="#" data-industry_id="11">能源·化工·环保</a></li>
+										<li><a href="#" data-industry_id="12">政府·农林牧渔</a></li>
+										<li><a href="#" data-industry_id="13">教育·文化</a></li>
+									</ul>
+								</span>
+							</div><!-- /.type-choose -->
+								<div>
+									<label for="">所在地：</label>
+									<span class="dropdown province-d">
+										<button class="btn dropdown-toggle" type="button" id="province" data-toggle="dropdown" disabled="disabled">
+											<span class="chosen-item">请选择省份</span> 
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu p-menu" id="ul_prov">
+											<!-- <li><a href="#">广东省</a></li>
+											<li><a href="#">湖南省</a></li>
+											<li><a href="#">湖北省</a></li>
+											<li><a href="#">云南省</a></li> -->
+										</ul>
+									</span>
+									<span class="line">—</span>
+									<span class="dropdown city-d">
+										<button class="btn dropdown-toggle" type="button" id="city" data-toggle="dropdown" disabled="disabled">
+											<span class="chosen-item">请选择城市</span> 
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" id="ul_city">
+											<!-- <li><a href="#">广州市</a></li>
+											<li><a href="#">深圳市</a></li>
+											<li><a href="#">清远市</a></li>
+											<li><a href="#">惠州市</a></li> -->
+										</ul>
+									</span>
+								</div>
+								<div>
+									<label for="">公司地址：</label>
+									<input type="text" readonly class="detail-position" id="com_addr" value="" />
+								</div>
+								<div>
+									<label for="">招聘联系人：</label>
+									<input type="text" readonly class="contact" id="link_man" value="" />
+								</div>
+								<div>
+									<label for="">联系人电话：</label>
+									<input type="text" readonly class="contact-phone" id="com_phone" value="" />
+								</div>
+								<div>
+									<label for="">公司认证：</label>
+									<input type="text" readonly class="company-authentication" id="com_authentication" value="" />
+								</div>
+								<div>
+									<label for="" class="intruction">公司介绍：</label>
+									<textarea class="company-intruction" id="com_detail" onpropertychange="this.style.height=(this.scrollHeight)+'px';" oninput="this.style.height=(this.scrollHeight)+'px';"
+									readonly="readonly">项目的详细叙述</textarea>
+								</div>
+						</div><!-- /.xx-content -->
+						<div class="pj-content">
+							<p id="ppp">无消息</p>
+							<div class="evaluate-item">
+								<textarea readonly="readonly" class="pingjia" onpropertychange="this.style.height=(this.scrollHeight-24)+'px';" oninput="this.style.height=(this.scrollHeight-24)+'px';">难度饿哦你咯牺牲品钱啊可惜了米好多钱哦了没想看 型就强迫没课情况可我想看的金额wii都觉得我诶为变化我查到我可没想看</textarea>
+								<span class="pj-time">
+									<span>2016年12月1日</span> 
+								</span>
+							</div>
+							<!-- <div class="evaluate-item">
+								<textarea readonly="readonly" class="pingjia" onpropertychange="this.style.height=(this.scrollHeight-24)+'px';" oninput="this.style.height=(this.scrollHeight-24)+'px';">难度饿哦你咯牺牲品钱啊可惜了米好多钱哦了没想看 型就强迫没课情况可我想看的金额wii都觉得我诶为变化我查到我可没想看
+								</textarea>
+								<span class="pj-time">
+									<span>2016年12月1日</span> 
+								</span>
+							</div> 
+							<div class="evaluate-item">
+								<textarea readonly="readonly" class="pingjia" onpropertychange="this.style.height=(this.scrollHeight-24)+'px';" oninput="this.style.height=(this.scrollHeight-24)+'px';">难度饿哦你咯牺牲品钱啊可惜了米好多钱哦了没想看 型就强迫没课情况可我想看的金额wii都觉得我诶为变化我查到我可没想看
+								</textarea>
+								<span class="pj-time">
+									<span>2016年12月1日</span> 
+								</span>
+							</div> 
+							<div class="evaluate-item">
+								<textarea readonly="readonly" class="pingjia" onpropertychange="this.style.height=(this.scrollHeight-24)+'px';" oninput="this.style.height=(this.scrollHeight-24)+'px';">难度饿哦你咯牺牲品钱啊可惜了米好多钱哦了没想看 型就强迫没课情况可我想看的金额wii都觉得我诶为变化我查到我可没想看
+								</textarea>
+								<span class="pj-time">
+									<span>2016年12月1日</span> 
+								</span>
+							</div> 
+						<div class="evaluate-item">
+							<textarea readonly="readonly" class="pingjia" onpropertychange="this.style.height=(this.scrollHeight-24)+'px';" oninput="this.style.height=(this.scrollHeight-24)+'px';">难度饿哦你咯牺牲品钱啊可惜了米好多钱哦了没想看 型就强迫没课情况可我想看的金额wii都觉得我诶为变化我查到我可没想看
+							</textarea>
+							<span class="pj-time">
+								<span>2016年12月1日</span> 
+							</span>
+						</div>  -->
+					</div>
+						</div><!-- /.pj-content -->
+					</div><!-- /.company-right -->
+					<br class="clear" />
+				</div><!-- /.company-section -->
+			</div><!--  /.whole-c-->
+		</div><!-- /.load_nav -->
+		<!-- Bootstap js -->
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/jquery-1.10.2.min.js"></script>
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/bootstrap.min.js"></script>
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/bootstrap-datepicker.js"></script>
+		<script  type="text/javascript" src="../../web/js/microcvLayout_th.js"></script>
+		<!-- My js -->
+		<script  type="text/javascript" src="../../web/js/companyCenter_th.js"></script>
+		<script  type="text/javascript" src="../../web/js/isLogin.js"></script>
+		<!-- ajaxfileupload js -->
+		<script src="../../web/js/ajaxfileupload.js" type="text/javascript"></script>
+		<script  type="text/javascript">
+		</script>
+	</body>
+</html>

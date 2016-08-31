@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" /> 
+		<!-- <meta http-equiv="content-Type" content="text/html; charset=UTF-8" />  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>简历预览~</title>
+		<!-- Bootstap css -->
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/bootstrap-datetimepicker.min.css" /> 		<!-- Public css -->
+		<link rel="icon" href="../img/microcv.ico" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/microcvLayout_th.css" />
+		<!-- My css -->
+		<link rel="stylesheet" type="text/css" href="../../web/css/showResume_th.css" />
+	</head>
+	<body>
+		<div id="load_nav"></div>
+			<div class="resume-section">
+				<div class="resume-con">
+					<span class="invi-span">
+						<button type="button" class="invitation">
+							<i class="fa fa-user-plus" ></i>面试邀请</button>
+						
+					</span>
+				<div class="jl-content">
+					<div class="jl-item grxx">
+						<p class="j-head one-bottom">
+							<img src="../img/info.png" alt="info" />
+							个人信息
+						</p>
+						<div class="i-con">	
+							<span class="i-lon">
+								<img src="../img/uimg.png" alt="user-img" id="user-icon" onerror="imgerrorperson('user-icon');"/>
+							</span>
+							<span class="i-ron">
+								<span>
+									<label>姓名：</label>
+									<input type="text" value="xxx" readonly="readonly" class="jl-name"/>
+								</span>
+								<span>
+									<label>电话：</label>
+									<input type="text" value="1234556" readonly="readonly" class="jl-phone"/>
+								</span>
+								<span>
+									<label>性别：</label>
+									<input type="text" value="女" readonly="readonly" class="jl-sex"/>
+								</span>
+								<span>
+									<label>邮箱：</label>
+									<input type="text" value="123456@qq.com" readonly="readonly" class="jl-email"/>
+								</span>
+								<span>
+									<label>生日：</label>
+									<input type="text" value="22" readonly="readonly" class="jl-birthday"/>
+								</span>
+								<span>
+									<label>婚姻状况：</label>
+									<input type="text" value="未婚" readonly="readonly" class="jl-marry"/>
+								</span>
+							</span>
+						</div>
+					</div><!-- /.jl-item -->
+					<div class="jl-item jiaoyu">
+						<p class="j-head">
+							<img src="../img/edu.png" alt="info" />
+							教育经历
+						</p>
+						<div class="e-con">	
+								<span class="e-span">
+									<label>学校：</label>
+									<input type="text" value="" readonly="readonly"/>
+									<span class="period">
+										<span>
+										<label>教育时间：</label>
+											<input type="text" id="begintime" name="firstdate" data-date-format="yyyy-mm-dd" value="" class="datepicker"  disabled="disabled"/>
+											<i class="fa fa-calendar"></i>
+										</span>&nbsp;- &nbsp;<span>
+											<input type="text" id="endtime" name="lastdate" data-date-format="yyyy-mm-dd" value="" class="datepicker" disabled="disabled" />
+											<i class="fa fa-calendar"></i>
+										</span>
+									</span>
+								</span>
+								<span class="e-span">
+									<label>专业：</label>
+									<input type="text" value="" readonly="readonly"/>
+								</span>
+								<span class="e-span">
+									<label>学位：</label>
+									<input type="text" value="" readonly="readonly"/>
+								</span>
+						</div>
+					</div><!-- /.jl-item -->
+					<div class="jl-item xiangmu">
+						<p class="j-head">
+							<img src="../img/project.png" alt="info" />
+							项目经验
+						</p>
+						<div class="e-con x-con">
+								<span>
+									<label>项目名称：</label>
+									<input type="text" value="" readonly="readonly" />
+									<span class="period">
+										<span>
+										<label>项目时间：</label>
+											<input type="text" id="begintime" name="firstdate" data-date-format="yyyy-mm-dd" value="" class="datepicker" disabled="disabled"/>
+											<i class="fa fa-calendar"></i>
+										</span>&nbsp;- &nbsp;<span>
+											<input type="text" id="endtime" name="lastdate" data-date-format="yyyy-mm-dd" value="" class="datepicker" disabled="disabled" />
+											<i class="fa fa-calendar"></i>
+										</span>
+									</span>
+								</span>
+								<span>
+									<textarea class="xm-desc" onpropertychange="this.style.height=(this.scrollHeight-24)+'px';" oninput="this.style.height=(this.scrollHeight-24)+'px';"
+									readonly="readonly">项目详细描述
+									</textarea>
+								</span>
+								<span>
+								</span>
+						</div>
+					</div><!-- /.jl-item -->
+					<div class="jl-item gongzuo">
+						<p class="j-head">
+							<img src="../img/work.png" alt="info" />
+							工作经验
+						</p>
+						<div class="e-con i-ron">	
+								<span class="">
+									<label>公司名称：</label>
+									<input type="text" value=""  readonly="readonly"/>
+								</span>
+								<span class="">
+									<label>职位名称：</label>
+									<input type="text" value="" readonly="readonly"/>
+								</span>
+								<span class="date-spe">
+									<label>工作时间：</label>
+									<span class="period">
+										<span>
+											<input type="text" id="begintime" name="firstdate" data-date-format="yyyy-mm-dd" value="" class="datepicker" disabled="disabled"/>
+											<i class="fa fa-calendar"></i>
+										</span>&nbsp;- &nbsp;<span>
+											<input type="text" id="endtime" name="lastdate" data-date-format="yyyy-mm-dd" value="" class="datepicker" disabled="disabled"/>
+											<i class="fa fa-calendar"></i>
+										</span>
+									</span>
+								</span>
+								<span class="gz-span">
+									<textarea class="gz-desc" onpropertychange="this.style.height=(this.scrollHeight-24)+'px';" oninput="this.style.height=(this.scrollHeight-24)+'px';" readonly="readonly">工作描述
+									</textarea>
+								</span>
+						</div>
+					</div><!-- /.jl-item -->
+					<div class="jl-item qiuzhi-w">
+						<p class="j-head">
+							<img src="../img/wanted.png" alt="info" />
+								求职意向
+						</p>
+						<div class="e-con i-ron">	
+								<span>
+									<label>期望工作行业：</label>
+									<!-- <input id="willing_i" type="text" value="xxx" readonly="readonly"/> -->
+									<span class="dropdown industry-d">
+									<button class="btn dropdown-toggle" type="button" id="type-btn" data-toggle="dropdown" disabled="disabled">
+										<span class="chosen-item" id="willing_i">请选择</span> 
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="#" data-industry_id="1">互联网·游戏·软件</a></li>
+										<li><a href="#" data-industry_id="2">电子·通信·硬件</a></li>
+										<li><a href="#" data-industry_id="3">房地产·建筑·物业</a></li>
+										<li><a href="#" data-industry_id="4">金融</a></li>
+										<li><a href="#" data-industry_id="5">消费品</a></li>
+										<li><a href="#" data-industry_id="6">汽车·机械·制造</a></li>
+										<li><a href="#" data-industry_id="7">服务·外包·中介</a></li>
+										<li><a href="#" data-industry_id="8">广告·传媒</a></li>
+										<li><a href="#" data-industry_id="9">交通·贸易·物流</a></li>
+										<li><a href="#" data-industry_id="10">制药·医疗</a></li>
+										<li><a href="#" data-industry_id="11">能源·化工·环保</a></li>
+										<li><a href="#" data-industry_id="12">政府·农林牧渔</a></li>
+										<li><a href="#" data-industry_id="13">教育·文化</a></li>
+									</ul>
+								</span>
+								</span>
+								<span>
+									<label>期望工作地点：</label>
+								<!-- 	<input id="willing_p" type="text" value="xxx" readonly="readonly" /> -->
+										<span class="dropdown province-d">
+										<button class="btn dropdown-toggle" type="button" id="province" data-toggle="dropdown" disabled="disabled">
+											<span class="chosen-item">请选择省份</span> 
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu p-menu" id="ul_prov">
+											<li class="prov_li"><a href="#">广东省</a></li>
+											<li class="prov_li"><a href="#">湖南省</a></li>
+											<li class="prov_li"><a href="#">湖北省</a></li>
+											<li class="prov_li"><a href="#">云南省</a></li>
+										</ul>
+									</span>
+									<span class="line">—</span>
+									<span class="dropdown city-d">
+										<button class="btn dropdown-toggle" type="button" id="city" data-toggle="dropdown" disabled="disabled">
+											<span class="chosen-item">请选择城市</span> 
+											<span class="caret"></span>
+										</button>
+									</span>
+								</span>
+								<span>
+									<label>期望薪资：</label>
+									<input id="willing_s" type="text" value="xxx" readonly="readonly"/>
+								</span>
+								<span>
+									<label>当前薪资：</label>
+									<input id="cur_s" type="text" value="xxx" readonly="readonly"/>
+								</span>
+								<br class="clear" />
+						</div>
+					</div><!-- /.jl-item -->
+					<div class="jl-item language">
+						<p class="j-head">
+							<img src="../img/language.png" alt="info" />
+								语言能力
+							</p>
+							<div class="dropdown">
+								<button class="btn dropdown-toggle" type="button" id="" data-toggle="dropdown" disabled="disabled">
+									<span class="chosen-item">请选择</span> 
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" id="language_menu">
+									<!-- <li><a href="#" onclick="return false;">普通话</a></li>
+									<li><a href="#" onclick="return false;">英语四级</a></li>
+									<li><a href="#" onclick="return false;">英语六级</a></li>
+									<li><a href="#" onclick="return false;">西班牙语</a></li>
+									<li><a href="#" onclick="return false;"></a></li>
+									<li><a href="#" onclick="return false;">韩语</a></li>
+									<li><a href="#" onclick="return false;">日语</a></li> -->
+								</ul>
+							</div>
+						<div class="slist" id="slist">
+						</div>
+					</div><!-- /.jl-item -->
+					<div class="jl-item">
+						<p class="j-head">
+							<img src="../img/skill.png" alt="info" />
+								擅长技能
+						</p>
+						<span  class="gz-span">
+								<textarea id="skill" class="gz-desc" onpropertychange="this.style.height=(this.scrollHeight-24)+'px';" oninput="this.style.height=(this.scrollHeight-24)+'px';" readonly="readonly">特长描述</textarea>
+						</span>
+					</div><!-- /.jl-item -->
+					<div class="jl-item">
+						<p class="j-head">
+							<img src="../img/eval.png" alt="info" />
+								自我评价
+						</p>
+						<span class="gz-span" >
+								<textarea id="selfevaluation" class="gz-desc" onpropertychange="this.style.height=(this.scrollHeight-24)+'px';" oninput="this.style.height=(this.scrollHeight-24)+'px';" readonly="readonly">评价描述</textarea>
+						</span>
+					</div><!-- /.jl-item -->
+					<div class="jl-item">
+						<p class="j-head">
+							<img src="../img/addtional.png" alt="info" />
+								附加信息
+						</p>
+						<span  class="gz-span">
+								<textarea id="additional" class="gz-desc" onpropertychange="this.style.height=(this.scrollHeight-24)+'px';" oninput="this.style.height=(this.scrollHeight-24)+'px';" readonly="readonly">如获奖经历，技能证书等</textarea>
+						</span>
+					</div><!-- /.jl-item -->
+				</div><!-- /.jl-content -->
+				</div><!-- /.resume-con -->
+				<div id="mark"></div>
+				<!--  bigimgCon-->
+				<div id="msyqCon">
+					<div class="con-head">
+						<!-- <span class="con-close">
+							<i  class="con-close">&times;</i>
+							<br class="clear" />
+							</span> -->
+					</div>
+					<div class="con-body">
+						<span class="con-close">
+							<i >&times;</i>
+						</span>
+						<div class="con-con">
+							<div>
+								<label>面试时间：</label>
+								<span class="d-wrap">
+									<input type="text" id="interviewtime"  value="" class="form_datetime" />
+									<i class="fa fa-calendar"></i>
+								</span>
+							</div>
+							<div>
+								<label>面试地点：</label>
+								<input type="text" placeholder="输入面试地点" id="interviewplace" />
+							</div>
+							<div>
+								<label>联系方式：</label>
+								<input type="text" placeholder="输入联系方式" id="linkmanphone"/>
+							</div>
+							<div>
+								<label>联系人：</label>
+								<input type="text" placeholder="输入联系人" id="linkmanname"/>
+							</div>
+							<div>
+								<button type="button" class="sendto"  >
+									<i class="fa fa-send-o"></i>
+								</button>
+							</div>
+						</div> <!-- /.con-con -->
+					</div>
+				</div><!-- /#msyqCon -->
+		
+		<!-- Bootstap js -->
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/jquery-1.10.2.min.js"></script>
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/bootstrap.min.js"></script>
+ 		<script  type="text/javascript" src="../../web/js/microcvLayout_th.js"></script>
+ 		<script  type="text/javascript" src="../../web/resource/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+		<!-- My js -->
+		<script  type="text/javascript" src="../../web/js/showResume_th.js"></script>
+		<script  type="text/javascript" src="../../web/js/isLogin.js"></script>
+		<!-- ajaxfileupload js -->
+		<script  type="text/javascript">
+			$(function(){
+				 $(".form_datetime").datetimepicker({
+					  format: 'yyyy-mm-dd hh:ii',
+					  autoclose: true,
+					  todayBtn:true
+					  });
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,175 @@
+.whole-c {    
+	margin-top:48px;
+	background-color: #f0f0f0;
+	padding-bottom: 20px; 
+}
+.main-c {
+	width:800px;
+	margin:0 auto 10px;
+	padding-top:20px;
+}
+.pos-head {
+	background-color: #ffba01;
+	height:48px;
+}
+input {
+	width:160px;
+}
+.pos-head img {
+	width:48px;
+	height:48px;
+	vertical-align: top;
+}
+.pos-head .r-head {
+	height:48px;
+	display: inline-block;
+	padding:3px 6px;
+	width:730px;
+	text-align: center;
+} 
+.r-head .p-name {
+	vertical-align: bottom;
+	color:#fff;
+	margin-left:16px;
+	font-family:"RTWSYueGo trial Regular","微软雅黑"!important;
+	font-size:16px;
+	line-height: 42px;
+}
+.pos-detail {
+	background-color: #fff;
+	padding:0 40px;
+	color:#666;
+	border:1px solid rgba(0,0,0,.15);
+	border-top:none;
+	margin-bottom: 10px;
+	font-family:"微软雅黑";
+}
+.sub-title {
+	color:#333;
+	margin-bottom: 0;
+	height: 24px;
+}
+.sub-title > label {
+	line-height: 24px;
+	vertical-align: top;
+	font-weight: normal;
+	margin-bottom: 0;
+	margin-right: 8px;
+	width: 70px;
+	text-align: right;
+}
+.contact-inclusion input,
+.sub-title > input {
+	border: 1px solid #dcdcdc;
+	padding: 4px 6px;
+	height: 24px;
+	border-raiuds:2px;
+}
+.zw-content {
+	padding:0 30px 10px 30px;
+	color:#666;
+}
+.pos-detail > div {
+	padding:12px 10px;
+	border-bottom: 1px solid #dcdcdc;
+	font-size:14px;
+}
+.zwyq-list {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.zwyq-list > div > span {
+	display: inline-block;
+	margin-right: 14px;
+}
+.zwyq-list > div {
+	margin-bottom: 10px;
+}
+.row1{
+	margin-top: 6px;
+}
+.row3 > span {
+	margin-right: 10px;
+}
+.zwyq-list > div > span label,
+.contact-inclusion label {
+	font-weight: normal;
+	margin-bottom: 0;
+	font-size:14px;
+	width:70px;
+	text-align: right;
+}
+.contact-inclusion label {
+	width: 100px;
+	text-align: right;
+}
+.contact-inclusion li {
+	margin: 10px 0;
+}
+.dropdown {
+	display:inline-block;
+}
+.dropdown button {
+	background-color: #fff!important;
+	border: 1px solid #dcdcdc;
+	width:160px;
+	padding:4px 8px;
+	text-align: left;
+}
+.caret{
+	float:right;
+	margin-top:6px;
+}
+.dropdown-menu {
+	height: 110px;
+	overflow: auto;
+}
+.dropdown-menu.zwlx-menu,
+.dropdown-menu.sex-menu {
+	height: 86px;
+}
+.row4 > span input,
+.row3 > span input,
+.row1 > span > input {
+	border: 1px solid #dcdcdc;
+	padding: 4px 6px;
+	height: 24px;
+	border-raiuds:2px;
+	width:160px;
+}
+.describe,
+.introduction {
+	margin-left:20px;
+	font-size: 14px;
+    font-family: "微软雅黑";
+    display:inline-block;
+    background-color: #f0f0f0;
+    outline: none;
+    overflow-y: hidden;
+    overflow-x: visible;
+    border:1px solid #c0c0c0;
+    padding:8px 16px;
+    width:90%;
+    color:#333;
+    min-height:70px;
+}
+.contact-inclusion {
+	font-size: 14px;
+	font-family:"微软雅黑";
+	font-color:#fff;
+	font-weight: normal;
+}
+.b-div {
+	padding:10px;
+	margin-bottom: 10px;
+}
+.fabu {
+	background-color: #ffcc45;
+	color:#fff;
+	width:60px;
+	padding:3px 8px;
+	outline: none;
+}
+.fabu:hover {
+	background-color: #ffba01;
+}

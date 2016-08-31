@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" /> 
+		<!-- <meta http-equiv="content-Type" content="text/html; charset=UTF-8" />  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>发布职位~</title>
+		<!-- Bootstap css -->
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/animate.min.css" />
+		<!-- Public css -->
+		<link rel="icon" href="../img/microcv.ico" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/microcvLayout_th.css" />
+		<!-- My css -->
+		<link rel="stylesheet" type="text/css" href="../../web/css/jobPos_th.css" />
+	</head>
+	<body>
+		<div id="load_nav"></div>
+		<div class="whole-c">
+			<div class="main-c">
+				<div class="pos-head">
+					<img class="com-logo" id="com_logo" src="../img/skill.png" />
+						<span class="r-head">
+							<span class="p-name" id="com_name">广州市玄武无线科技股份有限公司</span>
+						</span>
+				
+				</div><!-- /pos.head -->
+				<div class="pos-detail">
+					<div class="job-name">
+						<p class="sub-title">
+							<label>职位名称:</label>
+							<input type="text" id="pos_name"/>
+						</p>
+					</div>
+					<div class="salary">
+						<p class="sub-title">
+							<label>月薪:</label>
+							<input type="text" id="salary"/>
+						</p>
+					</div>
+					<div class="sex">
+						<span class="sub-title">
+							<label>性别:</label>
+						</span>
+							<span class="dropdown sex-d" >
+								<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+									<span class="chosen-item">请选择</span> 
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu sex-menu">
+									<li><a href="#" data-sex_request="M">男</a></li>
+									<li><a href="#" data-sex_request="F">女</a></li>
+									<li><a href="#" >不限</a></li>
+								</ul>
+							</span>
+					</div>
+					<div class="pos-type">
+						<span class="sub-title">
+							<label>职位类型:</label>
+						</span>
+							<span class="dropdown zwlx-d" >
+								<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+									<span class="chosen-item">请选择</span> 
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu zwlx-menu">
+									<li><a href="#" data-pos_type="S">实习</a></li>
+									<li><a href="#" data-pos_type="F">全职</a></li>
+									<li><a href="#" data-pos_type="P">兼职</a></li>
+									<li><a href="#" data-pos_type="N">不限</a></li>
+								</ul>
+							</span>
+					</div>
+					<div class="long-time">
+						<span class="sub-title">
+							<label>持续时长:</label>
+						</span>
+							<span class="dropdown mon-d" >
+								<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+									<span class="chosen-item">请选择</span> 
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu mon-menu">
+									<li><a href="#" data-lastmonth="1">一月</a></li>
+									<li><a href="#" data-lastmonth="2">二月</a></li>
+									<li><a href="#" data-lastmonth="3">三月</a></li>
+									<li><a href="#" data-lastmonth="6">半年</a></li>
+									<li><a href="#" data-lastmonth="12">一年</a></li>
+									<li><a href="#" data-lastmonth="0">不限</a></li>
+								</ul>
+							</span>
+					</div>
+					<div class="job-require">
+						<p class="sub-title">
+							<label>职位要求:</label>
+						</p>
+								<div class="zwyq-list">
+									<div class="row1">
+										<span class="xueli" >
+											<label>学历：</label>
+											<span class="dropdown xl-d" >
+												<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+													<span class="chosen-item">请选择</span> 
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu xl-menu">
+													<li><a href="#" data-record_request="1">高中以下</a></li>
+													<li><a href="#" data-record_request="2">中专</a></li>
+													<li><a href="#" data-record_request="3">高中</a></li>
+													<li><a href="#" data-record_request="4">大专</a></li>
+													<li><a href="#" data-record_request="5">本科</a></li>
+													<li><a href="#" data-record_request="6">研究生</a></li>
+													<li><a href="#" data-record_request="7">博士</a></li>
+													<li><a href="#" data-record_request="8">博士后</a></li>
+												</ul>
+											</span>
+										</span><!-- /.xueli -->
+									</div><!-- /.row1 -->
+									<div class="row2">
+										<span class="language">
+											<label>语言：</label>
+											<span class="dropdown l-d">
+												<button class="btn dropdown-toggle" type="button"  data-toggle="dropdown">
+													<span class="chosen-item">请选择</span> 
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu l-menu">
+													<li><a href="#" >普通话</a></li>
+													<li><a href="#" >英语四级</a></li>
+													<li><a href="#" >英语六级</a></li>
+													<li><a href="#" >粤语</a></li>
+													<li><a href="#" >西班牙语</a></li>
+													<li><a href="#" >葡萄牙语</a></li>
+													<li><a href="#" >俄语</a></li>
+													<li><a href="#" >日语</a></li>
+													<li><a href="#" >意大利语</a></li>
+													<li><a href="#" >德语</a></li>
+													<li><a href="#" >法语</a></li>
+													<li><a href="#" >韩语</a></li>
+												</ul>
+											</span>
+										</span>	<!--/.language  -->
+									</div>
+									<div class="row3">
+										<span>
+											<label for="">专业：</label>
+											<input type="text" id="major"/>
+										</span>
+									</div>
+									<div class="row4">
+										<span>
+											<label for="">年限：</label>
+											<input type="text" id="seniority">&nbsp;年</input>
+										</span>
+									</div>
+									<div class="row5">
+										<span class="age">
+											<label for="">年龄：</label>
+											<span class="dropdown minage">
+												<button class="btn dropdown-toggle" type="button"  data-toggle="dropdown" >
+													<span class="chosen-item">请选择</span> 
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu age-menu">
+													<li><a href="#" >18</a></li>
+													<li><a href="#" >20</a></li>
+													<li><a href="#" >25</a></li>
+													<li><a href="#" >30</a></li>
+												</ul>
+											</span>
+											<span class="line">--</span>
+											<span class="dropdown maxage">
+												<button class="btn dropdown-toggle" type="button"  data-toggle="dropdown" >
+													<span class="chosen-item">请选择</span> 
+													<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu age-menu">
+													<li><a href="#" >20</a></li>
+													<li><a href="#" >25</a></li>
+													<li><a href="#" >30</a></li>
+													<li><a href="#" >35</a></li>
+												</ul>
+											</span>
+										</span><!-- /.age -->
+									</div><!--/.row2  -->	
+									</div>	<!--  /.zwyq-list-->
+								</div><!-- /.job-require -->
+								<div class="job-desc">
+									<p class="sub-title">
+										<span>职位描述:</span>
+									</p>
+									<textarea id="pos_detail" class="describe" onpropertychange="this.style.height=(this.scrollHeight)+'px';" oninput="this.style.height=(this.scrollHeight)+'px';"
+									></textarea>
+								</div><!--/.job-describe  -->
+								<div class="contact-way">
+									<p class="sub-title">
+										<span>联系方式:</span>
+									</p>
+									<ul class="contact-inclusion">
+										<li>
+											<label>联系人：</label>
+											<input type="text" id="linkman"/>
+										</li>
+										<li>
+											<label>联系电话：</label>
+											<input type="text" id="link_phone"/>
+										</li>
+										<li>
+											<label>HR的email：</label>
+											<input type="text" id="hr_email"/>
+										</li>
+									</ul>						
+								</div><!-- /.contact-wa-->
+								
+								<div class="b-div">
+									<button type="button" class="fabu" id="fabu">发布</button>
+								</div>
+						</div><!-- /.pos-detail -->
+					</div><!-- /.main-c -->
+				</div><!-- /.whole-c -->
+		<!-- Bootstap js -->
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/jquery-1.10.2.min.js"></script>
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/bootstrap.min.js"></script>
+		<script  type="text/javascript" src="../../web/js/microcvLayout_th.js"></script>
+		<!-- My js -->
+		<script  type="text/javascript" src="../../web/js/jobPos_th.js"></script>
+		<script  type="text/javascript" src="../../web/js/isLogin.js"></script>
+		<script  type="text/javascript">
+		</script>
+	</body>
+</html>

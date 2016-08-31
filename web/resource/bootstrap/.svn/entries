@@ -1,0 +1,37 @@
+10
+
+dir
+299
+http://xjf:81/svn/MicroCV/MicroCV/WebRoot/web/resource/bootstrap
+http://xjf:81/svn/MicroCV
+
+
+
+2016-08-17T17:09:22.587417Z
+272
+xumeimei
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f51b32e4-812c-e343-851a-bad3cbe63368
+
+css
+dir
+
+fonts
+dir
+
+js
+dir
+

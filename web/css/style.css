@@ -1,0 +1,163 @@
+/*公共样式*/
+html {
+	color:#333;
+	background:#fff;
+	font-family:'helvetica neue','Arial','sans-serif','微软雅黑';
+	height:100%;
+}
+body {
+	padding:0;
+	margin:0;
+	font-size:14px;
+	color:#000;
+	background:#fff;
+	font-family:'helvetica neue','Arial','sans-serif';
+	/* line-height:18px; */
+/* 	height:100%!important;
+ */}
+a {
+	text-decoration:none!important;
+	outline:none!important;
+}
+a:hover {
+	text-decoration:none!important;
+	outline:none;
+}
+ul {
+	padding-left:0;
+}
+li {
+	list-style:none;
+}
+.clear{
+	clear: both;
+}
+.text-center {
+	text-align:center;
+}
+button {
+	display:inline-block;
+	border:none;
+	box-shadow:none;
+}
+p {
+	margin-bottom: 6px;
+}
+/* checkbox-custom */
+.checkbox-custom {
+	position: relative;
+	padding: 0 0 0 25px;
+	margin-bottom: 7px;
+	margin-top: 0;
+	text-align:center;
+	margin-right:10px;
+}
+.checkbox-custom input[type="checkbox"] {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 3px;
+	margin: -6px 0 0 0;
+	z-index: 2;
+	cursor: pointer;
+}
+/* 打勾的出现 */
+.checkbox-custom input[type="checkbox"]:checked + label:after {
+	position: absolute;
+	display: inline-block;
+	font-family: 'FontAwesome';
+	content: '\F00C';
+	top: 50%;
+	left: 4px;
+	margin-top: -5px;
+	font-size: 11px;
+	line-height: 1;
+	width: 16px;
+	height: 16px;
+	color: #ffba01;
+}
+.checkbox-custom label {
+	cursor: pointer;
+	margin-bottom: 0;
+	text-align: left;
+	line-height: 1.2;
+	font-weight: normal;
+	color:#999;
+}
+.checkbox-custom label:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -9px;
+	width: 19px;
+	height: 18px;
+	display: inline-block;
+	border-radius: 2px;
+	border: 1px solid #ffe08c;
+	background: #fff;
+}
+/* 遮罩层 */
+#bmark{
+	background:rgba(0,0,0,.6)!important;
+	filter:Alpha(opacity:.6);
+	background: #000;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:block;
+	z-index:5;
+}
+#mark {
+	background:rgba(0,0,0,.6)!important;
+	filter:Alpha(opacity:.6);
+	background: #000;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:none;
+	z-index:5;
+}
+
+/* 退出con */
+#exitCon{
+	width:100%;
+	height:100%;
+	z-index:9999;
+	position: absolute;
+	display: block;
+	top: 50px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.exit-body {
+	width:400px;
+	margin:0 auto;
+	background-color: #fff;
+	text-align: center;
+	padding:20px;
+	border-radius:2px;
+}
+.exit-body .p-tip{
+	font-size:16px;
+}
+.exit-body button {
+	width:60px;
+	padding:4px 8px;
+}
+.exit-body .cancel {
+	color:#333;
+	margin-right: 10px;
+}
+.exit-body .sure {
+	color:#fff;
+	border:1px solid #dcdcdc;
+}
+.modal-footer {
+	text-align: center;
+}

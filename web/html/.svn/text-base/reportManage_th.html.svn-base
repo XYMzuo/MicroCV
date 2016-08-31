@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" /> 
+		<!-- <meta http-equiv="content-Type" content="text/html; charset=UTF-8" />  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>报表管理~</title>
+		<!-- Bootstap css -->
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/animate.min.css" />
+		<!-- Public css -->
+		<link rel="icon" href="../img/microcv.ico" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/microcvLayout_th.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../../web/css/microcvLayout2_th.css" /> -->
+		<!-- My css -->
+		<link rel="stylesheet" type="text/css" href="../../web/css/reportManage_th.css" />
+	</head>
+	<body>
+		<div id="load_nav"></div>
+		<div class="content-wrap">
+			<div class="main-content">
+				<!-- table  -->
+				<div class="t-div">
+					<table class="table-css top-table">
+						<thead>
+							<tr>
+								<td></td>
+								<td>已发布职位总数</td>
+								<td>女性投递数</td>
+								<td>男性投递数</td>
+								<td>职位的平均投递数</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>人数</td>
+								<td id="num_td1">32</td>
+								<td id="num_td2">32</td>
+								<td id="num_td3">32</td>
+								<td id="num_td4">32</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="time-xz">
+						<span class="dropdown">
+							<button class="btn dropdown-toggle" type="button" id="year-btn" data-toggle="dropdown">
+								<span class="chosen-item" id="">2016</span> 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu menu-y">
+								<li><a href="#">2011</a></li>
+								<li><a href="#">2012</a></li>
+								<li><a href="#">2013</a></li>
+								<li><a href="#">2014</a></li>
+								<li><a href="#">2015</a></li>
+								<li><a href="#">2016</a></li>
+							</ul>
+						</span>
+						年
+						
+					</div>
+					<table class="table-css td-table">
+						<thead>
+							<tr>
+								<td>月份</td>
+								<td>一月</td>
+								<td>二月</td>
+								<td>三月</td>
+								<td>四月</td>
+								<td>五月</td>
+								<td>六月</td>
+								<td>七月</td>
+								<td>八月</td>
+								<td>九月</td>
+								<td>十月</td>
+								<td>十一月</td>
+								<td>十二月</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>投递人数</td>
+								<td id="mon_td1">3</td>
+								<td id="mon_td2">5</td>
+								<td id="mon_td3">12</td>
+								<td id="mon_td4">5</td>
+								<td id="mon_td5">8</td>
+								<td id="mon_td6">3</td>
+								<td id="mon_td7">5</td>
+								<td id="mon_td8">12</td>
+								<td id="mon_td9">5</td>
+								<td id="mon_td10">8</td>
+								<td id="mon_td11">3</td>
+								<td id="mon_td12">5</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!--/.t-div  -->
+			</div><!--/.main-content  -->
+		</div><!-- /.content-wrap -->
+		<!-- Bootstap js -->
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/jquery-1.10.2.min.js"></script>
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/bootstrap.min.js"></script>
+		<script  type="text/javascript" src="../../web/js/microcvLayout_th.js"></script>
+		<!-- My js -->
+		<script  type="text/javascript" src="../../web/js/reportManage_th.js"></script>
+		<script  type="text/javascript" src="../../web/js/isLogin.js"></script>
+	<script  type="text/javascript">
+		</script>
+	</body>
+</html>

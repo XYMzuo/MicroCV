@@ -1,0 +1,187 @@
+.whole-c {
+	margin-top:48px;
+	background-color: #f0f0f0;
+	padding-bottom: 20px; 
+}
+.main-c {
+	width:800px;
+	margin:0 auto 10px;
+	padding-top:20px;
+}
+.pos-head {
+	background-color: #ffba01;
+	height:48px;
+}
+.pos-head img {
+	width:48px;
+	height:48px;
+	vertical-align: top;
+}
+.pos-head .r-head {
+	height:48px;
+	display: inline-block;
+	padding:2px 6px 6px;
+	width:730px;
+} 
+.r-head .pos-name {
+	display:inline-block;
+	font-family:"RTWSYueGo trial Regular","微软雅黑"!important;
+	color:#fff;
+	font-size:22px;
+	line-height: 40px;
+}
+.r-head .p-name {
+	vertical-align: bottom;
+	color:#fff;
+	margin-left:16px;
+	font-family:"RTWSYueGo trial Regular","微软雅黑"!important;
+	font-size:15px;
+}
+.collect {
+	float:right;
+	color:#f10505;
+	vertical-align: bottom!important;
+	margin-top:18px;
+	text-decoration: underline;
+	line-height: 20px;
+	font-size:14px;
+}
+.collect .fa-heart {
+	color:#fff;
+	margin-right: 4px;
+}
+.collect .fa-heart:hover {
+	cursor: pointer;
+}
+.pos-detail {
+	background-color: #fff;
+	padding:10px 40px;
+	color:#666;
+	border:1px solid rgba(0,0,0,.15);
+	border-top:none;
+	margin-bottom: 10px;
+}
+.pos-detail img {
+	width:16px;
+	height: 16px;
+	margin-right: 3px;
+	vertical-align: middle;
+}
+.pos-detail .row1 {
+	padding: 4px 40px;
+	border-bottom: 1px solid #999;
+	position: relative;
+}
+.pos-detail .t-salary{
+	color:#f16d0b;
+	font-size:18px;
+	font-weight: 700;
+}
+.time {
+	margin-right: 26px;
+}
+.address,
+.time > span {
+	display: inline-block;
+	line-height:16px;
+}
+.sendto {
+	position: absolute;
+	right:60px;
+	top:8px;
+	background-color: #ffba01;
+	color:#fff;
+	padding:6px 10px;
+	font-size:20px;
+	font-family:"RTWSYueGo trial Regular","微软雅黑"!important;
+	border-radius:2px;
+}
+.sendto .fa {
+	margin-right: 6px;
+}
+.row5{
+	padding:16px 30px 10px;
+}
+.row4,
+.row3,
+.row2 {
+	padding:16px 30px 10px;
+	border-bottom: 1px solid #999;
+}
+.rec {
+	display:inline-block;
+	width:4px;
+	height:16px;
+	background-color: #ffba01;
+}
+ 
+.sub-title {
+	color:#333;
+}
+.sub-title > span {
+	line-height: 16px;
+	vertical-align: top;
+}
+.required > span {
+	color:#666;
+	margin:0 16px;
+}
+.introduce-content,
+.zw-content {
+	padding:0 30px 10px 30px;
+	color:#666;
+}
+.i-con {
+	text-indent: 28px;
+	overflow: hidden!important;
+}
+.n-more {
+	color:#0b21f1;
+	display: none;
+}
+.n-more:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.pos-bottom{
+	background-color: #fff;
+	padding:10px 36px 20px 36px;
+	margin-bottom: 10px;
+	border:1px solid rgba(0,0,0,.15);
+}
+.main-color{
+	color:#ffba01;
+}
+.pos-bottom > p{
+	padding-left: 26px;
+	border-bottom: 1px solid #999;
+	padding-bottom: 16px;
+}
+.tj-table {
+	width:100%;
+}
+.tj-table td {
+	padding:2px 16px;
+	color:#333;
+	border-bottom: 1px solid #999;
+}
+.tj-table tr td:first-child img {
+	width:36px;
+	height:36px;
+	float:right;
+}
+.tj-table .position {
+	font-family:"RTWSYueGo trial Regular","微软雅黑"!important;
+	font-size: 18px;
+	color:#ffba01;
+	font-weight: 500;
+}
+.tj-table .sal {
+	font-family:"RTWSYueGo trial Regular","微软雅黑"!important;
+	color:#f16d0b;
+	font-weight: 700;
+}
+.position:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}

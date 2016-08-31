@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" /> 
+		<!-- <meta http-equiv="content-Type" content="text/html; charset=UTF-8" />  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>搜索~</title>
+		<!-- Bootstap css -->
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/animate.min.css" />
+		<!-- Public css -->
+		<link rel="icon" href="../img/microcv.ico" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/microcvLayout_th.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/login_th.css" />
+		<!-- My css -->
+		<link rel="stylesheet" type="text/css" href="../../web/css/layout_th.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/search_th.css" />
+	</head>
+<body>
+	<div id="load_nav"></div>
+		<div class="content-wrap">
+			<div class="main-content item-list">
+				<div class="row-con">
+				<div class="con-wrap">
+				<div class="chose-row ">
+					<!-- <span class="xz-tip" >
+						请选择以下其中至少一项
+					</span>
+					<button type="button" class="sx-btn">搜索</button> -->
+					<div id=""  class="searching-uint2">
+						<input id="query_w" type="text" name="" placeholder="搜索" value="">
+						<i class="fa fa-search"></i>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-md-2 control-label col-lg-2 col-sm-2 col-md-offset-2" for="text-input">
+						职位类型：
+					</label>
+					<div class="col-md-8 col-lg-8 col-sm-8">
+						<div class="dropdown">
+							<button class="btn dropdown-toggle" type="button" id="zwlx-btn" data-toggle="dropdown">
+								<span class="chosen-item">请选择</span> 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#" data-pos_type="S">实习</a></li>
+								<li><a href="#" data-pos_type="F">全职</a></li>
+								<li><a href="#" data-pos_type="P">兼职</a></li>
+								<li><a href="#" data-pos_type="N">不限</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+				<div class="label-wrap col-md-2 control-label col-lg-2 col-sm-2 col-md-offset-2">
+					<label  for="text-input" style="width:100%;">
+						行业类型：
+					</label>
+				</div>
+					<div class="col-md-8 col-lg-8 col-sm-8 hylx-list">
+						<div class="hylx-item">
+							<span> 
+								<span data-industry_id="1">互联网·游戏·软件</span>
+								<span class="modify-lx">
+									<i class="fa fa-pencil-square-o"></i>
+								</span>
+							</span>
+						</div>
+						<div class="hylx-item">
+							<span>
+								<span data-industry_id="2">电子·通信·硬件</span>
+								<span class="modify-lx">
+									<i class="fa fa-pencil-square-o"></i>
+								</span>
+							</span>
+						</div>
+						<div class="hylx-item">
+							<span>
+								<span data-industry_id="3">房地产·建筑·物业</span>
+								<span class="modify-lx">
+									<i class="fa fa-pencil-square-o"></i>
+								</span>
+							</span>
+						</div>
+						<div class="hylx-item">
+							<span>
+								<span data-industry_id="13">教育·文化</span>
+								<span class="modify-lx">
+									<i class="fa fa-pencil-square-o"></i>
+								</span>
+							</span>
+						</div>
+						<div class="hylx-item">
+							<span>
+								<span data-industry_id="4">金融</span>
+								<span class="modify-lx">
+									<i class="fa fa-pencil-square-o"></i>
+								</span>
+							</span>
+						</div>
+						<div class="hylx-item">
+							<span>
+								<span data-industry_id="5">消费品</span>
+								<span class="modify-lx">
+									<i class="fa fa-pencil-square-o"></i>
+								</span>
+							</span>
+						</div>
+						<div class="hylx-item">
+							<span>
+								<span data-industry_id="6">汽车·机械·制造</span>
+								<span class="modify-lx">
+									<i class="fa fa-pencil-square-o"></i>
+								</span>
+							</span>
+						</div>
+						<div class="hylx-item">
+							<span>
+								<span data-industry_id="7">服务·外包·中介</span>
+								<span class="modify-lx">
+									<i class="fa fa-pencil-square-o"></i>
+								</span>
+							</span>
+						</div> 
+						<div class="hylx-item">
+							<span>
+								<span data-industry_id="8">广告·传媒</span>
+								<span class="modify-lx">
+									<i class="fa fa-pencil-square-o"></i>
+								</span>
+							</span>
+						</div>
+						<div class="hylx-item">
+							<span>
+								<span data-industry_id="9">交通·贸易·物流</span>
+								<span class="modify-lx">
+									<i class="fa fa-pencil-square-o"></i>
+								</span>
+							</span>
+						</div>
+						<div class="hylx-item">
+							<span>
+								<span data-industry_id="10">制药·医疗</span>
+								<span class="modify-lx">
+									<i class="fa fa-pencil-square-o"></i>
+								</span>
+							</span>
+						</div>
+						<div class="hylx-item">
+							<span>
+								<span data-industry_id="11">能源·化工·环保</span>
+								<span class="modify-lx">
+									<i class="fa fa-pencil-square-o"></i>
+								</span>
+							</span>
+						</div>
+						<div class="hylx-item">
+							<span>
+								<span data-industry_id="12">政府·农林牧渔</span>
+								<span class="modify-lx">
+									<i class="fa fa-pencil-square-o"></i>
+								</span>
+							</span>
+						</div>
+					</div>
+				</div><!-- /.form-group -->
+				
+					<div class="form-group row">
+					<label class="col-md-2 control-label col-lg-2 col-sm-2 col-md-offset-2" for="text-input">
+						地区：
+					</label>
+					<div class="col-md-8 col-lg-8 col-sm-8 ">
+						<div class="dropdown province-d">
+							<button class="btn dropdown-toggle" type="button" id="sq-btn1" data-toggle="dropdown">
+								<span class="chosen-item">请选择省份</span> 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" id="ul_prov">
+								<!-- <li><a href="#">广东省</a></li>
+								<li><a href="#">湖南省</a></li>
+								<li><a href="#">湖北省</a></li>
+								<li><a href="#">云南省</a></li> -->
+							</ul>
+						</div>
+						<span class="line">—</span>
+						<div class="dropdown city-d ">
+							<button class="btn dropdown-toggle" type="button" id="city" data-toggle="dropdown">
+								<span class="chosen-item">请选择城市</span> 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" id="ul_city">
+								<!-- <li><a href="#">广州市</a></li>
+								<li><a href="#">深圳市</a></li>
+								<li><a href="#">清远市</a></li>
+								<li><a href="#">惠州市</a></li> -->
+							</ul>
+						</div>
+					</div>
+				</div><!--/.form-group -->
+				<div class="form-group row">
+					<label class="col-md-2 control-label col-lg-2 col-sm-2 col-md-offset-2" for="text-input">
+						工资：
+					</label>
+					<div class="col-md-8 col-lg-8 col-sm-8 ">
+						<div class="dropdown firsal-d">
+							<button class="btn dropdown-toggle" type="button" id="gz-btn1" data-toggle="dropdown">
+								<span class="chosen-item">请选择</span> 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" id="first_sal">
+								<li><a href="#">1000</a></li>
+								<li><a href="#">2000</a></li>
+								<li><a href="#">3000</a></li>
+								<li><a href="#">4000</a></li>
+								<li><a href="#">5000</a></li>
+								<li><a href="#">6000</a></li>
+								<li><a href="#">7000</a></li>
+								<li><a href="#">8000</a></li>
+								<li><a href="#">9000</a></li>
+								<li><a href="#">10000</a></li>
+								<li><a href="#">20000</a></li>
+							</ul>
+						</div>
+						<span class="line">—</span>
+						<div class="dropdown secsal-d ">
+							<button class="btn dropdown-toggle" type="button" id="gz-btn2" data-toggle="dropdown">
+								<span class="chosen-item">请选择</span> 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" id="second_sal">
+								<li><a href="#">3000</a></li>
+								<li><a href="#">4000</a></li>
+								<li><a href="#">5000</a></li>
+								<li><a href="#">6000</a></li>
+								<li><a href="#">7000</a></li>
+								<li><a href="#">8000</a></li>
+								<li><a href="#">9000</a></li>
+								<li><a href="#">10000</a></li>
+								<li><a href="#">20000</a></li>
+								<li><a href="#">30000</a></li>
+								<li><a href="#">不限</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- /.form-group -->
+				<div class="form-group row">
+					<label class="col-md-2 control-label col-lg-2 col-sm-2 col-md-offset-2" for="text-input">
+						学历：
+					</label>
+					<div class="col-md-8 col-lg-8 col-sm-8 ">
+						<div class="dropdown">
+							<button class="btn dropdown-toggle" type="button" id="xl-btn1" data-toggle="dropdown">
+								<span class="chosen-item">请选择</span> 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#" data-record_request="1">高中以下</a></li>
+								<li><a href="#" data-record_request="2">中专</a></li>
+								<li><a href="#" data-record_request="3">高中</a></li>
+								<li><a href="#" data-record_request="4">大专</a></li>
+								<li><a href="#" data-record_request="5">本科</a></li>
+								<li><a href="#" data-record_request="6">研究生</a></li>
+								<li><a href="#" data-record_request="7">博士</a></li>
+								<li><a href="#" data-record_request="8">博士后</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- /.form-group -->
+				<div class="form-group row">
+					<label class="col-md-2 control-label col-lg-2 col-sm-2 col-md-offset-2" for="text-input">
+						发布时间：
+					</label>
+					<div class="col-md-8 col-lg-8 col-sm-8 ">
+						<div class="dropdown">
+							<button class="btn dropdown-toggle" type="button" id="fbsj-btn1" data-toggle="dropdown">
+								<span class="chosen-item">请选择</span> 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">今天</a></li>
+								<li><a href="#">三天内</a></li>
+								<li><a href="#">一周内</a></li>
+								<li><a href="#">一个月内</a></li>
+								<li><a href="#">不限</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- /.form-group -->
+				<div class="form-group row">
+					<label class="col-md-2 control-label col-lg-2 col-sm-2 col-md-offset-2" for="text-input">
+						公司名称：
+					</label>
+					<div class="col-md-8 col-lg-8 col-sm-8 ">
+						<input type="text" id="company_name" />
+					</div>
+				</div>
+				</div><!-- /.con-wrap -->
+			</div><!-- /.row-con -->
+			<div class="result-con" id="search_result">
+				<span>搜索结果</span>
+			</div><!-- /.result-con -->
+		</div><!-- /.main-content -->
+</div><!--/.content-wrap  -->
+		<!-- Bootstap js -->
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/jquery-1.10.2.min.js"></script>
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/bootstrap.min.js"></script>
+		<script  type="text/javascript" src="../../web/js/microcvLayout_th.js"></script>
+		<script  type="text/javascript" src="../../web/js/login_th.js"></script>
+		<!-- My js -->
+		<script  type="text/javascript" src="../../web/js/search_th.js"></script>
+		<script  type="text/javascript">
+		</script>
+	</body>
+</html>

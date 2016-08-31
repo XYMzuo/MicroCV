@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<!-- <meta http-equiv="content-Type" content="text/html; charset=UTF-8" />  -->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>欢迎来到微简历~</title>
+<!-- Bootstap css -->
+<link rel="stylesheet" type="text/css"
+	href="../../web/resource/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css"
+	href="../../web/resource/bootstrap/css/font-awesome.min.css" />
+<!-- Public css -->
+<link rel="icon" href="../img/microcv.ico" />
+<link rel="stylesheet" type="text/css" href="../../web/css/style.css" />
+<!-- My css -->
+<link rel="stylesheet" type="text/css" href="../../web/css/login_th.css" />
+</head>
+<body>
+	<!-- <div class="whole-content"> -->
+		<div class="main-content">
+			<span class="close"> <i>&times;</i>
+			</span>
+			<div class="logorow">
+				<img src="../../web/img/logo3.png" alt="logo" />
+				<!-- <span class="name">微简历</span> -->
+			</div>
+			<div class="holder">
+				<div class="with-line">欢迎来到微简历</div>
+				<div class="role">
+					<span class="person-item role-active">个人</span> <span
+						class="company-item">企业</span>
+				</div>
+				<div class="login">
+					<span class="person-log"> <input type="email" id="username"
+						name="username" placeholder="输入个人邮箱" /> <input type="password"
+						id="password" name="password" placeholder="密码" />
+					</span>
+					<div class="login-tip">
+						<span class="checkbox-custom checkbox-success"> <input
+							type="checkbox" id="rem-password" /> <label for="rem-password">记住密码</label>
+						</span> <span class="checkbox-custom checkbox-success"> <input
+							type="checkbox" id="auto-login" /> <label for="auto-login">自动登录</label>
+						</span>
+					</div>
+					<!--7月30号改，HTML5的新特性，为了使用input的required属性  -->
+					<!-- 	<button type="button" class="login-btn">登录</button> -->
+					<input type="submit" class="login-btn" value="登录" /> <a
+						class="forget-pas">忘记密码 </a>
+				</div>
+			</div>
+			<!--/.holder  -->
+		</div>
+		<!--/.main-content  -->
+	<!-- </div> -->
+	<!--  /.whole content-->
+	<!-- Bootstap js -->
+	<script type="text/javascript" src="../../web/resource/bootstrap/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="../../web/resource/bootstrap/js/bootstrap.min.js"></script>
+	<!-- My js -->
+	<script type="text/javascript" src="../../web/js/login_th.js"></script>
+	<script type="text/javascript">
+	</script>
+</body>
+</html>

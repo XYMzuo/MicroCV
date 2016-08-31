@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" /> 
+		<!-- <meta http-equiv="content-Type" content="text/html; charset=UTF-8" />  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>职位管理~</title>
+		<!-- Bootstap css -->
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/resource/bootstrap/css/animate.min.css" />
+		<!-- Public css -->
+		<link rel="icon" href="../img/microcv.ico" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../web/css/microcvLayout_th.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../../web/css/microcvLayout2_th.css" /> -->
+		<!-- My css -->
+		<link rel="stylesheet" type="text/css" href="../../web/css/posManage_th.css" />
+	</head>
+	<body>
+		<div id="load_nav"></div>
+		<div class="content-wrap">
+			<div class="main-content">
+				<!-- table  -->
+				<div class="t-div">
+					<div class="time-xz">
+						<span>时间:</span>
+						<span class="dropdown">
+							<button class="btn dropdown-toggle" type="button" id="year-btn" data-toggle="dropdown">
+								<span class="chosen-item" id="year">2016</span> 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu menu-y">
+								<li><a href="#">2011</a></li>
+								<li><a href="#">2012</a></li>
+								<li><a href="#">2013</a></li>
+								<li><a href="#">2014</a></li>
+								<li><a href="#">2015</a></li>
+								<li><a href="#">2016</a></li>
+								<li><a href="#">2017</a></li>
+							</ul>
+						</span>
+						年
+						<span class="dropdown">
+							<button class="btn dropdown-toggle" type="button" id="month-btn" data-toggle="dropdown">
+								<span class="chosen-item" id="month">全年</span> 
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu menu-m">
+								<li><a href="#">全年</a></li>
+								<li><a href="#">01</a></li>
+								<li><a href="#">02</a></li>
+								<li><a href="#">03</a></li>
+								<li><a href="#">04</a></li>
+								<li><a href="#">05</a></li>
+								<li><a href="#">06</a></li>
+								<li><a href="#">07</a></li>
+								<li><a href="#">08</a></li>
+								<li><a href="#">09</a></li>
+								<li><a href="#">10</a></li>
+								<li><a href="#">11</a></li>
+								<li><a href="#">12</a></li>
+							</ul>
+						</span>
+						
+					</div>
+					<table class="table-css zw-table">
+						<thead>
+							<tr>
+								<td>职位</td>
+								<td>月薪</td>
+								<td>发布日期</td>
+								<td>持续时长</td>
+								<td>投递人数</td>
+								<td>操作</td>
+							</tr>
+						</thead>
+						<tbody class="tbody">
+							<tr>
+								<td>UI设计师</td>
+								<td>1-1.2w</td>
+								<td>2016-8-1</td>
+								<td>12个月</td>
+								<td class="td-num">5</td>
+								<td>
+									<button class="cz-btn view">查看</button>
+									<button class="cz-btn delete">删除</button>
+								</td>
+							</tr>
+							<tr>
+								<td>UI设计师</td>
+								<td>1-1.2w</td>
+								<td>2016-8-1</td>
+								<td>12个月</td>
+								<td class="td-num">5</td>
+								<td>
+									<button class="cz-btn view">查看</button>
+									<button class="cz-btn delete">删除</button>
+								</td>
+							</tr>
+							<tr>
+								<td>UI设计师</td>
+								<td>1-1.2w</td>
+								<td>2016-8-1</td>
+								<td>12个月</td>
+								<td class="td-num">5</td>
+								<td>
+									<button class="cz-btn view">查看</button>
+									<button class="cz-btn delete">删除</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!--/.t-div  -->
+				<div class="detail-con">
+				<button tupe="button" class="back" >&lt;&lt; 返 回</button>
+					<div class="top-div">
+						<span>
+							职位信息
+						</span>
+						<table class="table-css cur-trow">
+							<thead>
+								<tr>
+									<td>职位</td>
+									<td>月薪</td>
+									<td>发布日期</td>
+									<td>持续时长</td>
+									<td>投递人数</td>
+								</tr>
+							</thead>
+							<tbody id="posinfotbody">
+								<tr>
+									<td id="posname">UI设计师</td>
+									<td id="possalary">1-1.2w</td>
+									<td id="posdate">2016-8-1</td>
+									<td id="poslastmonth">12个月</td>
+									<td id="deliverynum">5</td>
+								</tr>
+								<tr class="zhankai-tr">
+									<td colspan="5">
+										点击查看更多职位信息<i class="fa fa-long-arrow-down"></i>
+									</td>
+								</tr>
+								<tr class="con-tr">
+									<td colspan="5" class="more-con">
+										<div class="row2">
+											<p>
+												<span class="rec"></span>
+												<span>职位要求</span>
+											</p>
+											<p class="required">
+												<span id="pos_record">本科</span>
+												|<span id="pos_major">视觉传达</span>
+												|<span id="working_seniority">2年以上经验</span>
+												|<span id="pos_age">23-35岁</span>
+												|<span id="pos_lang">英语六级</span>
+											</p>
+										</div><!-- /.row2 -->
+									</td>
+								</tr>
+								<tr class="con-tr">
+									<td class="more-con" colspan="5">
+										<div class="row3">
+											<p>
+												<span class="rec"></span>
+												<span>职位描述</span>
+											</p>
+											<div id="div-detail">
+												<p id="pos_detail">一、主导并负责相应产品的视觉设计及交互设计，包括：</p>
+													<p>1.实现产品的UI设计，包括产品及门户等应用或系统的交互设计与视觉设计</p>
+													<p>2.实现产品的logo、吉祥物、宣传物料等的设计</p>
+													<p>3.分析用户使用和操作行为，优化产品业务流程设计和UI设计，改善用户体验，提升产品易用性</p>
+													<p>4.结合产品的项目实施过程，实现客户个性化需求的设计要求</p>
+													<p>5.学习、研究、报告IT产品主流UI设计思想和风格，供应各产品UI素材需要</p>
+													<p>二、完善UI设计规范，提升UI设计技能，建立和维护UI设计素材库。
+												<p >任职要求：</p>
+													<p>1、本科以上学历，正规院校艺术类或广告设计专业毕业；</p>
+													<p>2、2年UI设计工作经验，熟悉Illustrator、Photoshop、Sketch、Fireworks、After Effects等设计软件，有IT行业工作经验优先；</p>
+													<p>3、思路清晰，能独立完成设计任务，并且具有较强的沟通协调能力；</p>
+													<p>4、具有优秀的创意思维、较强的审美观和创意展现能力，有扎实深厚的美术功底和时尚感知力；能够准确把握网站的整体风格及视觉表现，实时把握Web设计的流行趋势，提出崭新的创意策略；</p>
+													<p>5、工作积极主动，具有良好的沟通、表达能力、团队合作精神，能够很好的理解设计需求</p>
+													<p>6、应聘时请提供前期工作作品。</p>
+											</div>
+										</div><!--/.row3  -->
+									</td>
+								</tr>
+								<tr class="shouqi-tr">
+									<td colspan="5">
+										收起<i class="fa fa-long-arrow-up"></i>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- /.top-div -->
+					
+					<div class="bottom-div">
+						<span>
+							已收简历
+						</span>
+						<table class="table-css ysjl-table">
+							<thead>
+								<tr>
+									<td></td>
+									<td>姓名</td>
+									<td>学历</td>
+									<td>投递日期</td>
+									<td>状态</td>
+									<td>邀请状况</td>
+									<td></td>
+								</tr>
+							</thead>
+							<tbody id="personinfotbody">
+								<tr>
+									<td>
+										<img src="../img/heart.png" />
+									</td>
+									<td>UI设计师</td>
+									<td>1-1.2w</td>
+									<td>2016-8-1</td>
+									<td>12个月</td>
+									<td>是</td>
+									<td>
+										<button class="detail">详情</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- /.top-div -->
+					
+				</div><!-- /.detail-con -->
+			</div><!--/.main-content  -->
+		</div><!-- /.content-wrap -->
+		<!-- Bootstap js -->
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/jquery-1.10.2.min.js"></script>
+		<script  type="text/javascript" src="../../web/resource/bootstrap/js/bootstrap.min.js"></script>
+		<script  type="text/javascript" src="../../web/js/microcvLayout_th.js"></script>
+		<!-- My js -->
+		<script  type="text/javascript" src="../../web/js/posManage_th.js"></script>
+		<script  type="text/javascript" src="../../web/js/isLogin.js"></script>
+	<script  type="text/javascript">
+		</script>
+	</body>
+</html>

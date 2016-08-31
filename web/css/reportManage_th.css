@@ -1,0 +1,65 @@
+body {
+	font-family: "微软雅黑";
+	color:#666;
+	min-height: 100%;
+	background-color: #f2f2f2;
+}
+.content-wrap {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+.main-content {
+	margin:68px 0 20px;
+}
+.t-div {
+	margin:20px auto 30px;
+	width:800px;
+}
+.detail-con {
+	margin:20px auto 30px;
+	width:800px;
+	display: none;
+}
+.time-xz {
+	margin-bottom: 10px;
+}
+.time-xz .dropdown {
+	display: inline-block;
+	vertical-align: top;
+}
+.dropdown > button {
+	height:28px;
+	background-color: #fff;
+	padding:4px 14px;
+	width:100px;
+}
+.dropdown-menu {
+	min-width:100px!important;
+	height: 110px;
+	overflow: auto;
+}
+.dropdown .caret {
+	float:right;
+	margin-top: 8px;
+}
+
+.table-css {
+	width:100%;
+}
+.table-css thead {
+	background-color: #edebeb;
+}
+.table-css thead td,
+.table-css tbody td {
+	text-align: center;
+	border-bottom: 1px solid #dcdcdc;
+	padding:7px 10px;
+	border-left: 1px solid #dcdcdc;
+}
+.table-css tbody {
+	background-color: #fff;
+}
+.top-table {
+	margin-bottom: 26px;
+}

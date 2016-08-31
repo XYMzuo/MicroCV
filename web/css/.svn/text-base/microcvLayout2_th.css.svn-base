@@ -1,0 +1,72 @@
+/* footer */
+#load_footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+#footer {
+	width:100%;
+	height:auto;
+	position: absolute;
+	left:0;
+}
+.twitter {
+    background: url("../img/twitter-bg.jpg") no-repeat center top fixed;
+    background-size: cover;
+    color: #fff;
+}
+.twitter .overlay {
+    background: rgba(27, 28, 29, 0.9);
+}
+.padding-large {
+    padding-bottom: 20px;
+}
+.text-center {
+	text-align: center;
+}
+.twitter .icon {
+   padding-top: 10px;
+}
+.twitter .icon i{
+    transition:all 1.2s;
+    font-size: 80px;
+}
+.twitter .icon i:hover {
+    cursor: pointer;
+    transform:rotate(360deg) scale(1.3);
+    -webkit-transform:rotate(360deg) scale(1.3); 
+    -moz-transform:rotate(360deg) scale(1.3);  
+    -o-transform:rotate(360deg) scale(1.3);
+	color:#ffba01;	
+}
+ .swiper-container {
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 10px;
+}
+.swiper-slide {
+      background-position: center;
+      background-size: 100%;
+      width: 200px;
+      height: 200px;
+ }
+.swiper-container-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom:0;
+}
+.swiper-pagination-bullet {
+	background: #fff;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #ffba01;
+}
+.team-word {
+	display:inline-block;
+	 font-family: "Campton Bold", sans-serif;
+	 line-height:80px;
+	 vertical-align: top;
+	 font-size:22px;
+	 margin-left: 10px;
+	 font-weight: 700;
+}
